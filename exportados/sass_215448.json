@@ -1,0 +1,1664 @@
+{
+    "trafico_crudo": [
+        {
+            "id": 1965,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2001:4c28:3000:622:107:167:110:211",
+            "puerto_origen": 57231,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "75 B"
+        },
+        {
+            "id": 1966,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2001:4c28:3000:622:107:167:110:216",
+            "puerto_origen": 57232,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "75 B"
+        },
+        {
+            "id": 1967,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2001:4c28:3000:622:107:167:110:216",
+            "puerto_origen": 57233,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "75 B"
+        },
+        {
+            "id": 1968,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:4c28:3000:622:107:167:110:211",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 57231,
+            "protocolo": "HTTPS",
+            "tamano": "86 B"
+        },
+        {
+            "id": 1969,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:4c28:3000:622:107:167:110:216",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 57232,
+            "protocolo": "HTTPS",
+            "tamano": "74 B"
+        },
+        {
+            "id": 1970,
+            "fecha": "2026-07-22 21:49:58",
+            "ip_origen": "2001:4c28:3000:622:107:167:110:216",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 57233,
+            "protocolo": "HTTPS",
+            "tamano": "74 B"
+        },
+        {
+            "id": 1961,
+            "fecha": "2026-07-22 21:49:57",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2600:9000:25ee:9000:f:3d79:f100:93a1",
+            "puerto_origen": 57245,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "207 B"
+        },
+        {
+            "id": 1962,
+            "fecha": "2026-07-22 21:49:57",
+            "ip_origen": "2600:9000:25ee:9000:f:3d79:f100:93a1",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 57245,
+            "protocolo": "HTTPS",
+            "tamano": "1.1 KB"
+        },
+        {
+            "id": 1963,
+            "fecha": "2026-07-22 21:49:57",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2600:9000:25ee:9000:f:3d79:f100:93a1",
+            "puerto_origen": 57245,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "109 B"
+        },
+        {
+            "id": 1964,
+            "fecha": "2026-07-22 21:49:57",
+            "ip_origen": "2600:9000:25ee:9000:f:3d79:f100:93a1",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 57245,
+            "protocolo": "HTTPS",
+            "tamano": "74 B"
+        },
+        {
+            "id": 1953,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.1",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1954,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.1",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1955,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1956,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1957,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1958,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1959,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1960,
+            "fecha": "2026-07-22 21:49:55",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1951,
+            "fecha": "2026-07-22 21:49:54",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56822,
+            "protocolo": "HTTPS",
+            "tamano": "882 B"
+        },
+        {
+            "id": 1952,
+            "fecha": "2026-07-22 21:49:54",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56822,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1950,
+            "fecha": "2026-07-22 21:10:53",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1937,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1938,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1939,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1940,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "168 B"
+        },
+        {
+            "id": 1941,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "168 B"
+        },
+        {
+            "id": 1942,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1943,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1944,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1945,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1946,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1947,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1948,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1949,
+            "fecha": "2026-07-22 21:10:52",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1933,
+            "fecha": "2026-07-22 21:10:51",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1934,
+            "fecha": "2026-07-22 21:10:51",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1935,
+            "fecha": "2026-07-22 21:10:51",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1936,
+            "fecha": "2026-07-22 21:10:51",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1927,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1928,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56822,
+            "protocolo": "HTTPS",
+            "tamano": "483 B"
+        },
+        {
+            "id": 1929,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56822,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1930,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "96 B"
+        },
+        {
+            "id": 1931,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "116 B"
+        },
+        {
+            "id": 1932,
+            "fecha": "2026-07-22 21:10:50",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "255.255.255.255",
+            "puerto_origen": 65263,
+            "puerto_destino": 3289,
+            "protocolo": "UDP",
+            "tamano": "56 B"
+        },
+        {
+            "id": 1921,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1922,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1923,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "4.207.44.68",
+            "puerto_origen": 56909,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "55 B"
+        },
+        {
+            "id": 1924,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1925,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1926,
+            "fecha": "2026-07-22 21:10:49",
+            "ip_origen": "4.207.44.68",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56909,
+            "protocolo": "HTTPS",
+            "tamano": "66 B"
+        },
+        {
+            "id": 1914,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1915,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1916,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1917,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1918,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1919,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1920,
+            "fecha": "2026-07-22 21:10:48",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1902,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1903,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1904,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1905,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1906,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1907,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1908,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1909,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1910,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1911,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1912,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.1",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1913,
+            "fecha": "2026-07-22 21:10:47",
+            "ip_origen": "192.168.1.1",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1901,
+            "fecha": "2026-07-22 21:10:46",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1896,
+            "fecha": "2026-07-22 21:10:45",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "192.168.1.255",
+            "puerto_origen": 57621,
+            "puerto_destino": 57621,
+            "protocolo": "UDP",
+            "tamano": "82 B"
+        },
+        {
+            "id": 1897,
+            "fecha": "2026-07-22 21:10:45",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1898,
+            "fecha": "2026-07-22 21:10:45",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1899,
+            "fecha": "2026-07-22 21:10:45",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1900,
+            "fecha": "2026-07-22 21:10:45",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1870,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1871,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "fe80::195c:ad3d:ddc4:306a",
+            "ip_destino": "fe80::1",
+            "puerto_origen": 50942,
+            "puerto_destino": 53,
+            "protocolo": "DNS",
+            "tamano": "99 B"
+        },
+        {
+            "id": 1872,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.1",
+            "puerto_origen": 50942,
+            "puerto_destino": 53,
+            "protocolo": "DNS",
+            "tamano": "79 B"
+        },
+        {
+            "id": 1873,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "fe80::1",
+            "ip_destino": "fe80::195c:ad3d:ddc4:306a",
+            "puerto_origen": 53,
+            "puerto_destino": 50942,
+            "protocolo": "DNS",
+            "tamano": "222 B"
+        },
+        {
+            "id": 1874,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "66 B"
+        },
+        {
+            "id": 1875,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "66 B"
+        },
+        {
+            "id": 1876,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1877,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "571 B"
+        },
+        {
+            "id": 1878,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1879,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "153 B"
+        },
+        {
+            "id": 1880,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "398 B"
+        },
+        {
+            "id": 1881,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "56 B"
+        },
+        {
+            "id": 1882,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "1.4 KB"
+        },
+        {
+            "id": 1883,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "1.4 KB"
+        },
+        {
+            "id": 1884,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "2.7 KB"
+        },
+        {
+            "id": 1885,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "857 B"
+        },
+        {
+            "id": 1886,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1887,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "660 B"
+        },
+        {
+            "id": 1888,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "56 B"
+        },
+        {
+            "id": 1889,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "513 B"
+        },
+        {
+            "id": 1890,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "1.4 KB"
+        },
+        {
+            "id": 1891,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "137 B"
+        },
+        {
+            "id": 1892,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1893,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "2.1 KB"
+        },
+        {
+            "id": 1894,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "13.107.5.93",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56924,
+            "protocolo": "HTTPS",
+            "tamano": "433 B"
+        },
+        {
+            "id": 1895,
+            "fecha": "2026-07-22 21:10:44",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "13.107.5.93",
+            "puerto_origen": 56924,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1864,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2001:4860:482a:7700::",
+            "puerto_origen": 51786,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "91 B"
+        },
+        {
+            "id": 1865,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "2001:4860:482a:7700::",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51786,
+            "protocolo": "HTTPS",
+            "tamano": "90 B"
+        },
+        {
+            "id": 1866,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1867,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1868,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1869,
+            "fecha": "2026-07-22 21:10:43",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1848,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1849,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1850,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "192.168.1.255",
+            "puerto_origen": 57621,
+            "puerto_destino": 57621,
+            "protocolo": "UDP",
+            "tamano": "82 B"
+        },
+        {
+            "id": 1851,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "192.168.1.255",
+            "puerto_origen": 57621,
+            "puerto_destino": 57621,
+            "protocolo": "UDP",
+            "tamano": "82 B"
+        },
+        {
+            "id": 1852,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56908,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "55 B"
+        },
+        {
+            "id": 1853,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56908,
+            "protocolo": "HTTPS",
+            "tamano": "66 B"
+        },
+        {
+            "id": 1854,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1855,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1856,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1857,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1858,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1859,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1860,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1861,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1862,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.1",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1863,
+            "fecha": "2026-07-22 21:10:42",
+            "ip_origen": "192.168.1.1",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 0,
+            "puerto_destino": 0,
+            "protocolo": "ARP",
+            "tamano": "42 B"
+        },
+        {
+            "id": 1843,
+            "fecha": "2026-07-22 21:10:40",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "192.168.1.255",
+            "puerto_origen": 57621,
+            "puerto_destino": 57621,
+            "protocolo": "UDP",
+            "tamano": "82 B"
+        },
+        {
+            "id": 1844,
+            "fecha": "2026-07-22 21:10:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "255.255.255.255",
+            "puerto_origen": 65263,
+            "puerto_destino": 3289,
+            "protocolo": "UDP",
+            "tamano": "56 B"
+        },
+        {
+            "id": 1845,
+            "fecha": "2026-07-22 21:10:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.117",
+            "puerto_origen": 56782,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "55 B"
+        },
+        {
+            "id": 1846,
+            "fecha": "2026-07-22 21:10:40",
+            "ip_origen": "65.8.226.117",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56782,
+            "protocolo": "HTTPS",
+            "tamano": "66 B"
+        },
+        {
+            "id": 1847,
+            "fecha": "2026-07-22 21:10:40",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "192.168.1.255",
+            "puerto_origen": 57621,
+            "puerto_destino": 57621,
+            "protocolo": "UDP",
+            "tamano": "82 B"
+        },
+        {
+            "id": 1835,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "2607:f8b0:4012:827::200a",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51340,
+            "protocolo": "HTTPS",
+            "tamano": "337 B"
+        },
+        {
+            "id": 1836,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "2607:f8b0:4012:827::200a",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51340,
+            "protocolo": "HTTPS",
+            "tamano": "337 B"
+        },
+        {
+            "id": 1837,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2607:f8b0:4012:827::200a",
+            "puerto_origen": 51340,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "96 B"
+        },
+        {
+            "id": 1838,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "87 B"
+        },
+        {
+            "id": 1839,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "fe80::a4fd:c0ff:fecc:2011",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "107 B"
+        },
+        {
+            "id": 1840,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "192.168.1.16",
+            "ip_destino": "224.0.0.251",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "213 B"
+        },
+        {
+            "id": 1841,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "2001:1260:604:bee1:6e0c:9aff:fe4a:2e85",
+            "ip_destino": "ff02::fb",
+            "puerto_origen": 5353,
+            "puerto_destino": 5353,
+            "protocolo": "UDP",
+            "tamano": "217 B"
+        },
+        {
+            "id": 1842,
+            "fecha": "2026-07-22 21:10:39",
+            "ip_origen": "192.168.1.3",
+            "ip_destino": "239.255.255.250",
+            "puerto_origen": 47488,
+            "puerto_destino": 1900,
+            "protocolo": "UDP",
+            "tamano": "167 B"
+        },
+        {
+            "id": 1831,
+            "fecha": "2026-07-22 21:08:42",
+            "ip_origen": "65.8.226.54",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56799,
+            "protocolo": "HTTPS",
+            "tamano": "483 B"
+        },
+        {
+            "id": 1832,
+            "fecha": "2026-07-22 21:08:42",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56822,
+            "protocolo": "HTTPS",
+            "tamano": "882 B"
+        },
+        {
+            "id": 1833,
+            "fecha": "2026-07-22 21:08:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.54",
+            "puerto_origen": 56799,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1834,
+            "fecha": "2026-07-22 21:08:42",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56822,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1827,
+            "fecha": "2026-07-22 21:08:41",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1828,
+            "fecha": "2026-07-22 21:08:41",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1829,
+            "fecha": "2026-07-22 21:08:41",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1830,
+            "fecha": "2026-07-22 21:08:41",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1821,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56822,
+            "protocolo": "HTTPS",
+            "tamano": "882 B"
+        },
+        {
+            "id": 1822,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "65.8.226.54",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56799,
+            "protocolo": "HTTPS",
+            "tamano": "483 B"
+        },
+        {
+            "id": 1823,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.54",
+            "puerto_origen": 56799,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1824,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56822,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1825,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1826,
+            "fecha": "2026-07-22 21:08:40",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1813,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "2607:f8b0:4012:827::200a",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51340,
+            "protocolo": "HTTPS",
+            "tamano": "337 B"
+        },
+        {
+            "id": 1814,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2607:f8b0:4012:827::200a",
+            "puerto_origen": 51340,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "95 B"
+        },
+        {
+            "id": 1815,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "2607:f8b0:4012:827::200a",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51340,
+            "protocolo": "HTTPS",
+            "tamano": "337 B"
+        },
+        {
+            "id": 1816,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2607:f8b0:4012:827::200a",
+            "puerto_origen": 51340,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "96 B"
+        },
+        {
+            "id": 1817,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "65.8.226.54",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56799,
+            "protocolo": "HTTPS",
+            "tamano": "483 B"
+        },
+        {
+            "id": 1818,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "65.8.226.94",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 443,
+            "puerto_destino": 56822,
+            "protocolo": "HTTPS",
+            "tamano": "882 B"
+        },
+        {
+            "id": 1819,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.54",
+            "puerto_origen": 56799,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1820,
+            "fecha": "2026-07-22 21:08:37",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "65.8.226.94",
+            "puerto_origen": 56822,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1805,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1806,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1807,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 56706,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1808,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.7",
+            "ip_destino": "192.168.1.27",
+            "puerto_origen": 8009,
+            "puerto_destino": 63110,
+            "protocolo": "TCP",
+            "tamano": "164 B"
+        },
+        {
+            "id": 1809,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 56706,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1810,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "192.168.1.27",
+            "ip_destino": "192.168.1.7",
+            "puerto_origen": 63110,
+            "puerto_destino": 8009,
+            "protocolo": "TCP",
+            "tamano": "54 B"
+        },
+        {
+            "id": 1811,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "ip_destino": "2001:4860:482a:7700::",
+            "puerto_origen": 51786,
+            "puerto_destino": 443,
+            "protocolo": "HTTPS",
+            "tamano": "91 B"
+        },
+        {
+            "id": 1812,
+            "fecha": "2026-07-22 21:08:35",
+            "ip_origen": "2001:4860:482a:7700::",
+            "ip_destino": "2001:1260:604:bee1:f152:e9d8:f65f:da71",
+            "puerto_origen": 443,
+            "puerto_destino": 51786,
+            "protocolo": "HTTPS",
+            "tamano": "90 B"
+        }
+    ]
+}

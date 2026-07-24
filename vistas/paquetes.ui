@@ -1,0 +1,805 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Paquetes</class>
+ <widget class="QWidget" name="Paquetes">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>1024</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Paquetes - NETSCAPES</string>
+  </property>
+  <property name="styleSheet">
+   <string>QWidget { background-color: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; }</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_principal">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QFrame" name="frame_sidebar">
+     <property name="minimumSize">
+      <size>
+       <width>250</width>
+       <height>0</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>250</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string>#frame_sidebar { background-color: #666666; border-right: 2px solid #333333; }
+QPushButton { text-align: left; padding: 15px; font-size: 16px; background-color: transparent; border: none; color: #FFFFFF; }
+QPushButton:hover { background-color: #888888; }
+QLabel { color: #FFFFFF; }</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_sidebar">
+      <item>
+       <widget class="QLabel" name="label_logo">
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string>background-color: #FFFFFF; color: #000000; font-weight: bold; font-size: 18px;</string>
+        </property>
+        <property name="text">
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;NETSCAPES&lt;br/&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;NETWORK ANALYSIS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="espaciador_sidebar_1">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Policy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nav_dashboard">
+        <property name="text">
+         <string>Dashboard</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nav_captura">
+        <property name="text">
+         <string>Captura</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nav_paquetes">
+        <property name="styleSheet">
+         <string>background-color: #dddddd; color: #000000; font-weight: bold;</string>
+        </property>
+        <property name="text">
+         <string>Paquetes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nav_reportes">
+        <property name="text">
+         <string>Reportes</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_nav_bitacora">
+        <property name="text">
+         <string>Bitacora</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="espaciador_sidebar_2">
+        <property name="orientation">
+         <enum>Qt::Orientation::Vertical</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>40</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_sesion">
+        <item>
+         <widget class="QLabel" name="label_avatar">
+          <property name="text">
+           <string>AD</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_usuario_sesion">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Admin</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="espaciador_sesion">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_logout">
+          <property name="maximumSize">
+           <size>
+            <width>60</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="text">
+           <string>Salir</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="verticalLayout_contenido">
+     <property name="leftMargin">
+      <number>40</number>
+     </property>
+     <property name="topMargin">
+      <number>20</number>
+     </property>
+     <property name="rightMargin">
+      <number>40</number>
+     </property>
+     <property name="bottomMargin">
+      <number>40</number>
+     </property>
+     <item>
+      <widget class="QFrame" name="frame_header">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>60</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #bbbbbb; border: 1px solid #000000;</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_header">
+        <item>
+         <widget class="QLabel" name="label_header_title">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>20</pointsize>
+           </font>
+          </property>
+          <property name="text">
+           <string>Paquetes</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="espaciador_header">
+          <property name="orientation">
+           <enum>Qt::Orientation::Horizontal</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>40</width>
+            <height>20</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="espaciador_v1">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_busqueda">
+       <property name="styleSheet">
+        <string>background-color: #555555; border-radius: 8px;</string>
+       </property>
+       <layout class="QHBoxLayout" name="horizontalLayout_acciones">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <property name="leftMargin">
+         <number>15</number>
+        </property>
+        <property name="topMargin">
+         <number>15</number>
+        </property>
+        <property name="rightMargin">
+         <number>15</number>
+        </property>
+        <property name="bottomMargin">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QLineEdit" name="lineEdit_busqueda_paquete">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #dddddd; border: 2px solid #333333; border-radius: 4px; padding-left: 10px;</string>
+          </property>
+          <property name="placeholderText">
+           <string>Buscar paquete por ID, IP...</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="btn_filtro_fecha">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #dddddd; border: 2px solid #333333; border-radius: 4px;</string>
+          </property>
+          <property name="text">
+           <string>Fecha</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QComboBox" name="combo_filtro_protocolo">
+          <property name="minimumSize">
+           <size>
+            <width>150</width>
+            <height>45</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>14</pointsize>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string>background-color: #dddddd; border: 2px solid #333333; border-radius: 4px; padding-left: 10px;</string>
+          </property>
+          <property name="currentText">
+           <string>Protocolo</string>
+          </property>
+          <item>
+           <property name="text">
+            <string>Protocolo</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="espaciador_v2">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_detalles">
+       <property name="minimumSize">
+        <size>
+         <width>700</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>800</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="styleSheet">
+        <string>background-color: #dddddd; border-radius: 5px;</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_detalles">
+        <property name="spacing">
+         <number>15</number>
+        </property>
+        <item>
+         <widget class="QFrame" name="frame_detalles_header">
+          <property name="styleSheet">
+           <string>background-color: #666666; color: #FFFFFF; border-top-left-radius: 5px; border-top-right-radius: 5px;</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_det_header">
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_detalles_titulo_panel">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>10</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Detalle de paquetes seleccionados</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lbl_detalles_id">
+          <property name="font">
+           <font>
+            <family>Segoe UI</family>
+            <pointsize>12</pointsize>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="text">
+           <string>Información del paquete #-----</string>
+          </property>
+          <property name="margin">
+           <number>10</number>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QGridLayout" name="gridLayout_datos">
+          <property name="leftMargin">
+           <number>10</number>
+          </property>
+          <property name="rightMargin">
+           <number>10</number>
+          </property>
+          <property name="horizontalSpacing">
+           <number>50</number>
+          </property>
+          <property name="verticalSpacing">
+           <number>15</number>
+          </property>
+          <item row="0" column="0">
+           <widget class="QLabel" name="lbl_ip_origen">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>IP ORIGEN</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="0">
+           <widget class="QLabel" name="lbl_val_ip_origen">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="1">
+           <widget class="QLabel" name="lbl_ip_destino">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>IP DESTINO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="1" column="1">
+           <widget class="QLabel" name="lbl_val_ip_destino">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="2" column="0" colspan="2">
+           <widget class="Line" name="line_1">
+            <property name="styleSheet">
+             <string>color: #bbbbbb;</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="0">
+           <widget class="QLabel" name="lbl_puerto_origen">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>PUERTO ORIGEN</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="0">
+           <widget class="QLabel" name="lbl_val_puerto_origen">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="3" column="1">
+           <widget class="QLabel" name="lbl_puerto_destino">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>PUERTO DESTINO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="4" column="1">
+           <widget class="QLabel" name="lbl_val_puerto_destino">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="5" column="0" colspan="2">
+           <widget class="Line" name="line_2">
+            <property name="styleSheet">
+             <string>color: #bbbbbb;</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="0">
+           <widget class="QLabel" name="lbl_protocolo">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>PROTOCOLO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="0">
+           <widget class="QLabel" name="lbl_val_protocolo">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="6" column="1">
+           <widget class="QLabel" name="lbl_tamano">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>TAMAÑO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="7" column="1">
+           <widget class="QLabel" name="lbl_val_tamano">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="8" column="0" colspan="2">
+           <widget class="Line" name="line_3">
+            <property name="styleSheet">
+             <string>color: #bbbbbb;</string>
+            </property>
+            <property name="orientation">
+             <enum>Qt::Orientation::Horizontal</enum>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="0">
+           <widget class="QLabel" name="lbl_tiempo">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>TIEMPO</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="0">
+           <widget class="QLabel" name="lbl_val_tiempo">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+          <item row="9" column="1">
+           <widget class="QLabel" name="lbl_captura">
+            <property name="font">
+             <font>
+              <family>Segoe UI</family>
+              <bold>true</bold>
+             </font>
+            </property>
+            <property name="text">
+             <string>CAPTURA</string>
+            </property>
+           </widget>
+          </item>
+          <item row="10" column="1">
+           <widget class="QLabel" name="lbl_val_captura">
+            <property name="text">
+             <string>---</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <spacer name="espaciador_detalles_abajo">
+          <property name="orientation">
+           <enum>Qt::Orientation::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>10</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <spacer name="espaciador_v3">
+       <property name="orientation">
+        <enum>Qt::Orientation::Vertical</enum>
+       </property>
+       <property name="sizeType">
+        <enum>QSizePolicy::Policy::Fixed</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>30</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QFrame" name="frame_tabla_fondo">
+       <property name="styleSheet">
+        <string>background-color: #dddddd; border-radius: 5px;</string>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_tabla">
+        <item>
+         <widget class="QFrame" name="frame_tabla_header">
+          <property name="styleSheet">
+           <string>background-color: #666666; color: #FFFFFF; border-top-left-radius: 5px; border-top-right-radius: 5px;</string>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_t_header">
+           <property name="topMargin">
+            <number>5</number>
+           </property>
+           <property name="bottomMargin">
+            <number>5</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="lbl_tabla_titulo">
+             <property name="font">
+              <font>
+               <family>Segoe UI</family>
+               <pointsize>11</pointsize>
+              </font>
+             </property>
+             <property name="text">
+              <string>Últimos paquetes</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="espaciador_t_header">
+             <property name="orientation">
+              <enum>Qt::Orientation::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_tabla_todos">
+             <property name="styleSheet">
+              <string>background: transparent; color: #FFFFFF; font-size: 12px; text-decoration: underline;</string>
+             </property>
+             <property name="text">
+              <string>Ver todos</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QTableWidget" name="tableWidget_paquetes">
+          <property name="styleSheet">
+           <string>QTableWidget { background-color: transparent; border: none; } QHeaderView::section { background-color: transparent; border: none; font-weight: bold; border-bottom: 1px solid #aaaaaa; }</string>
+          </property>
+          <property name="verticalScrollBarPolicy">
+           <enum>Qt::ScrollBarPolicy::ScrollBarAlwaysOn</enum>
+          </property>
+          <property name="horizontalScrollBarPolicy">
+           <enum>Qt::ScrollBarPolicy::ScrollBarAsNeeded</enum>
+          </property>
+          <property name="editTriggers">
+           <set>QAbstractItemView::EditTrigger::NoEditTriggers</set>
+          </property>
+          <property name="alternatingRowColors">
+           <bool>false</bool>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectionBehavior::SelectRows</enum>
+          </property>
+          <property name="showGrid">
+           <bool>false</bool>
+          </property>
+          <property name="cornerButtonEnabled">
+           <bool>false</bool>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+          <column>
+           <property name="text">
+            <string>ID</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>IP ORIGEN</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>IP DESTINO</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>PUERTO</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>PROTOCOLO</string>
+           </property>
+          </column>
+          <column>
+           <property name="text">
+            <string>TAMAÑO</string>
+           </property>
+          </column>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
