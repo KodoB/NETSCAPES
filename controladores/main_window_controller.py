@@ -3,13 +3,6 @@ from PyQt6.uic import loadUi
 
 
 class MainWindowController(QWidget):
-    """
-    ÚNICA ventana real de la app (después del login).
-    Contiene el sidebar (fijo, se crea una sola vez) y un QStackedWidget
-    donde se montan las páginas (Dashboard, Captura, Paquetes, Reportes,
-    Bitácora). Cambiar de "pantalla" ya NO cierra ni crea ventanas nuevas,
-    solo cambia cuál página está visible dentro del stack.
-    """
 
     def __init__(self, user_data):
         super().__init__()
@@ -24,13 +17,10 @@ class MainWindowController(QWidget):
         self._crear_paginas()
         self._conectar_navegacion()
 
-        # Página inicial al entrar
         self.ir_dashboard()
 
     @staticmethod
     def _obtener_iniciales(nombre_completo):
-        """'Edgar de Jesus' -> 'EJ'. Con un solo nombre, toma sus 2
-        primeras letras ('Admin' -> 'AD')."""
         partes = [p for p in nombre_completo.strip().split() if p]
         if not partes:
             return "??"
@@ -38,9 +28,6 @@ class MainWindowController(QWidget):
             return partes[0][:2].upper()
         return (partes[0][0] + partes[-1][0]).upper()
 
-    # ------------------------------------------------------------------
-    # Creación de páginas (una sola vez, se reutilizan durante toda la sesión)
-    # ------------------------------------------------------------------
     def _crear_paginas(self):
         from controladores.dashboard_controller import DashboardController
         from controladores.captura_controller import CapturaController
@@ -56,9 +43,6 @@ class MainWindowController(QWidget):
         self.pagina_bitacora = BitacoraController(self.user_data)
         self.pagina_admin = AdminController(self.user_data)
 
-        # El .ui trae una página vacía de relleno (pagina_vacia) porque
-        # Qt Designer no permite un QStackedWidget totalmente vacío.
-        # La quitamos y ponemos las páginas reales.
         if self.stackedWidget_contenido.count() > 0:
             placeholder = self.stackedWidget_contenido.widget(0)
             self.stackedWidget_contenido.removeWidget(placeholder)
@@ -74,22 +58,13 @@ class MainWindowController(QWidget):
         ):
             self.stackedWidget_contenido.addWidget(pagina)
 
-        # Dashboard <-> Captura: cada vez que cambian las estadísticas de la
-        # sesión de captura (llegue un paquete o pase un segundo), el
-        # Dashboard se actualiza en vivo, esté o no visible en ese momento.
         self.pagina_captura.estadisticas_actualizadas.connect(
             self.pagina_dashboard.actualizar_estadisticas_captura
         )
-        # Snapshot inicial para que el Dashboard no arranque en blanco/0
-        # si ya había datos de captura antes de conectar la señal.
         self.pagina_dashboard.actualizar_estadisticas_captura(
             self.pagina_captura.calcular_stats_snapshot()
         )
 
-    # ------------------------------------------------------------------
-    # Navegación: conecta los botones del sidebar (que ahora vive UNA sola
-    # vez en main_window.ui) a las páginas del stack.
-    # ------------------------------------------------------------------
     def _conectar_navegacion(self):
         self.btn_nav_dashboard.clicked.connect(self.ir_dashboard)
         self.btn_nav_captura.clicked.connect(self.ir_captura)
@@ -100,8 +75,6 @@ class MainWindowController(QWidget):
         self.btn_logout.clicked.connect(self.cerrar_sesion)
 
     def _marcar_activo(self, boton_activo):
-        """Deshabilita visualmente el botón de la sección activa (igual que
-        antes hacían tus controladores individuales con setEnabled(False))."""
         botones = (
             self.btn_nav_dashboard,
             self.btn_nav_captura,
@@ -124,8 +97,6 @@ class MainWindowController(QWidget):
     def ir_paquetes(self):
         self.stackedWidget_contenido.setCurrentWidget(self.pagina_paquetes)
         self._marcar_activo(self.btn_nav_paquetes)
-        # Refrescamos la tabla cada vez que se visita, igual que antes al
-        # recrear la ventana desde cero.
         self.pagina_paquetes.cargar_todos_paquetes()
 
     def ir_reportes(self):
@@ -146,7 +117,6 @@ class MainWindowController(QWidget):
     def cerrar_sesion(self):
         from controladores.login_controller import LoginController
 
-        # Detener timers/hilos activos antes de cerrar
         if hasattr(self.pagina_dashboard, "timer_refresh"):
             self.pagina_dashboard.timer_refresh.stop()
         if hasattr(self.pagina_captura, "hilo_sniffer") and self.pagina_captura.hilo_sniffer.is_running:

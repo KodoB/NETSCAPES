@@ -58,8 +58,6 @@ class AdminController(PageController):
             self.cargar_usuarios()
 
     def abrir_dialogo_editar(self, usuario_existente):
-        # Volvemos a pedir el registro completo por si cambió desde que
-        # se cargó la tabla (evita editar con datos desactualizados).
         datos_actuales = self.modelo_usuario.obtener_usuario_por_id(usuario_existente['id']) or usuario_existente
         dialogo = DialogoUsuarioController(usuario_existente=datos_actuales, parent=self)
         if dialogo.exec():

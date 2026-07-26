@@ -8,7 +8,7 @@ from PyQt6.QtCore import Qt, QDate
 from controladores.base_controller import PageController
 from modelos.trafico import Trafico
 
-# Librerías para el PDF
+
 from reportlab.lib.pagesizes import letter
 from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, Spacer
 from reportlab.lib.styles import getSampleStyleSheet
@@ -19,47 +19,38 @@ class ReportesController(PageController):
         super().__init__(user_data, "vistas/reportes.ui")
         self.modelo_trafico = Trafico()
 
-        # 1. Configurar fechas predeterminadas al día actual
         fecha_actual = QDate.currentDate()
         self.dateEdit_inicio.setDate(fecha_actual)
         self.dateEdit_fin.setDate(fecha_actual)
 
-        # 2. Conectar eventos de los radio buttons para bloquear/desbloquear checkboxes
         self.radio_pdf.toggled.connect(self.actualizar_estado_secciones)
         self.radio_csv.toggled.connect(self.actualizar_estado_secciones)
         self.radio_json.toggled.connect(self.actualizar_estado_secciones)
 
-        # Ejecutar una vez al inicio para establecer el estado base (PDF activado)
         self.actualizar_estado_secciones()
 
-        # Crear carpeta de exportados si no existe en la raíz del proyecto
         self.carpeta_exportados = os.path.join(os.getcwd(), "exportados")
         if not os.path.exists(self.carpeta_exportados):
             os.makedirs(self.carpeta_exportados)
 
-        # Buscar la carpeta de Descargas del usuario (Windows/Linux/Mac)
         self.carpeta_descargas = os.path.join(os.path.expanduser('~'), 'Downloads')
 
         self.btn_generar_reporte_accion.clicked.connect(self.generar_reporte)
         self.cargar_historial_reportes()
 
     def actualizar_estado_secciones(self):
-        """Bloquea o desbloquea las secciones dependiendo del formato elegido"""
-        # Solo PDF soporta las secciones visuales
         es_pdf = self.radio_pdf.isChecked()
 
         self.chk_resumen.setEnabled(es_pdf)
         self.chk_distribucion.setEnabled(es_pdf)
         self.chk_ips.setEnabled(es_pdf)
 
-        # Si se deshabilita, quitar las palomitas para que no haya confusiones visuales
         if not es_pdf:
             self.chk_resumen.setChecked(False)
             self.chk_distribucion.setChecked(False)
             self.chk_ips.setChecked(False)
 
     def cargar_historial_reportes(self):
-        """Lee la carpeta exportados y llena la tabla del historial"""
         self.tableWidget_historial.setRowCount(0)
 
         if not os.path.exists(self.carpeta_exportados):
@@ -89,7 +80,6 @@ class ReportesController(PageController):
             self.tableWidget_historial.setCellWidget(row_idx, 3, btn_descargar)
 
     def descargar_copia(self, ruta_origen):
-        """Toma el archivo de 'exportados' y lo copia a la carpeta de 'Downloads'"""
         nombre_archivo = os.path.basename(ruta_origen)
         ruta_destino = os.path.join(self.carpeta_descargas, nombre_archivo)
 
@@ -148,7 +138,6 @@ class ReportesController(PageController):
         except Exception as e:
             QMessageBox.critical(self, "Error de Exportación", f"Ocurrió un error al generar el reporte:\n{e}")
 
-    # --- MÉTODOS INTERNOS DE EXPORTACIÓN ---
 
     def _generar_csv(self, datos, ruta):
         with open(ruta, mode='w', newline='', encoding='utf-8') as file:

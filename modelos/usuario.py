@@ -15,18 +15,8 @@ class Usuario:
             return user
         return None
 
-    # ------------------------------------------------------------------
-    # CRUD para el Panel de Administración
-    #
-    # NOTA: se asume que la tabla "usuarios" tiene las columnas
-    # id, nombre_completo, usuario, password, rol. Si tu tabla real usa
-    # otros nombres de columna, solo hay que ajustar los SELECT/INSERT/
-    # UPDATE de aquí abajo — el resto del código no depende del nombre
-    # exacto de las columnas.
-    # ------------------------------------------------------------------
 
     def obtener_todos_usuarios(self):
-        """Devuelve la lista de usuarios (sin password) para la tabla de Admin."""
         conexion = self.bd.conectar()
         if conexion:
             cursor = conexion.cursor(dictionary=True)
@@ -49,8 +39,6 @@ class Usuario:
         return None
 
     def usuario_existe(self, usuario, excluir_id=None):
-        """Revisa si ya existe ese nombre de usuario (login). excluir_id
-        se usa al editar, para no chocar contra el propio registro."""
         conexion = self.bd.conectar()
         if conexion:
             cursor = conexion.cursor()
@@ -79,9 +67,6 @@ class Usuario:
         return False
 
     def actualizar_usuario(self, id_usuario, nombre_completo, usuario, rol, password=None):
-        """Si password es None, no se toca la contraseña actual (para
-        permitir editar nombre/usuario/rol sin forzar a escribir una
-        contraseña nueva cada vez)."""
         conexion = self.bd.conectar()
         if conexion:
             cursor = conexion.cursor()

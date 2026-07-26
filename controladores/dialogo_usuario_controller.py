@@ -4,14 +4,6 @@ from modelos.usuario import Usuario
 
 
 class DialogoUsuarioController(QDialog):
-    """
-    Modal para Crear o Editar un usuario. Es el mismo diseño para ambos
-    casos; lo único que cambia es el título, el texto del botón de
-    confirmar, y que en modo edición los campos llegan precargados.
-
-    - usuario_existente=None            -> modo "Crear Nuevo Usuario"
-    - usuario_existente={...datos...}   -> modo "Editar Usuario - {usuario}"
-    """
 
     def __init__(self, usuario_existente=None, parent=None):
         super().__init__(parent)
@@ -34,8 +26,7 @@ class DialogoUsuarioController(QDialog):
             else:
                 self.radioButton_analista.setChecked(True)
 
-            # En edición la contraseña es opcional: si se deja en blanco,
-            # se conserva la actual (ver modelos/usuario.py::actualizar_usuario)
+
             self.lineEdit_password.setPlaceholderText("Dejar en blanco para no cambiarla")
         else:
             self.setWindowTitle("Crear Nuevo Usuario")

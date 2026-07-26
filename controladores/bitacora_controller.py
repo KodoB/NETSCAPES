@@ -12,9 +12,6 @@ class BitacoraController(PageController):
         self.cargar_bitacora()
 
     def _limpiar_lista(self):
-        """Quita todos los widgets de logs ya cargados antes de volver a
-        pintar. Es necesario porque ahora esta página NO se recrea cada
-        vez que el usuario navega a Bitácora, sino que se reutiliza."""
         layout = self.verticalLayout_lista_logs
         while layout.count():
             item = layout.takeAt(0)

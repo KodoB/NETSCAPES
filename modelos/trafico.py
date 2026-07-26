@@ -58,7 +58,6 @@ class Trafico:
         conexion = self.bd.conectar()
         if conexion:
             cursor = conexion.cursor(dictionary=True)
-            # Agregamos 23:59:59 a la fecha fin para incluir todo ese día
             query = "SELECT * FROM trafico WHERE fecha >= %s AND fecha <= %s ORDER BY fecha DESC"
             cursor.execute(query, (f"{fecha_inicio} 00:00:00", f"{fecha_fin} 23:59:59"))
             datos = cursor.fetchall()
