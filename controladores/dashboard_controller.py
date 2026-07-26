@@ -9,35 +9,24 @@ class DashboardController(PageController):
         super().__init__(user_data, "vistas/monitoreo.ui")
         self.modelo_trafico = Trafico()
 
-        # Carga inicial
         self.cargar_ultimos_paquetes()
 
-        # Configurar un temporizador para refrescar la tabla cada 3 segundos
         self.timer_refresh = QTimer(self)
         self.timer_refresh.timeout.connect(self.cargar_ultimos_paquetes)
         self.timer_refresh.start(3000)
 
     def cargar_ultimos_paquetes(self):
-        """Extrae los paquetes y actualiza la tabla inferior visualmente"""
         datos = self.modelo_trafico.obtener_ultimos_paquetes(3)
 
-        # Guardar la selección actual si la hubiera
         self.tableWidget_ultimos.setRowCount(0)
 
         for row_idx, row_data in enumerate(datos):
             self.tableWidget_ultimos.insertRow(row_idx)
-            # row_data = (id, ip_origen, ip_destino, protocolo, tamano)
             for col_idx, col_data in enumerate(row_data):
                 item = QTableWidgetItem(str(col_data))
                 self.tableWidget_ultimos.setItem(row_idx, col_idx, item)
 
     def actualizar_estadisticas_captura(self, stats):
-        """
-        Recibe el snapshot en vivo de CapturaController (conectado desde
-        MainWindowController) y actualiza las tarjetas superiores y las
-        barras de protocolos. Se llama tanto mientras se está capturando
-        como después de que la captura termina.
-        """
         self.lbl_t1_valor.setText(str(stats['paquetes_totales']))
         self.lbl_t1_sub.setText(f"+{stats['paquetes_por_minuto']} / min")
 
