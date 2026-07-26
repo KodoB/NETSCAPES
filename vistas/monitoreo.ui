@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <ui version="4.0">
  <class>Monitoreo</class>
  <widget class="QWidget" name="Monitoreo">
@@ -16,181 +16,7 @@
   <property name="styleSheet">
    <string>QWidget { background-color: #FFFFFF; font-family: 'Segoe UI', Arial, sans-serif; }</string>
   </property>
-  <layout class="QHBoxLayout" name="horizontalLayout_principal">
-   <property name="spacing">
-    <number>0</number>
-   </property>
-   <property name="leftMargin">
-    <number>0</number>
-   </property>
-   <property name="topMargin">
-    <number>0</number>
-   </property>
-   <property name="rightMargin">
-    <number>0</number>
-   </property>
-   <property name="bottomMargin">
-    <number>0</number>
-   </property>
-   <item>
-    <widget class="QFrame" name="frame_sidebar">
-     <property name="minimumSize">
-      <size>
-       <width>250</width>
-       <height>0</height>
-      </size>
-     </property>
-     <property name="maximumSize">
-      <size>
-       <width>250</width>
-       <height>16777215</height>
-      </size>
-     </property>
-     <property name="styleSheet">
-      <string>#frame_sidebar { background-color: #666666; border-right: 2px solid #333333; }
-QPushButton { text-align: left; padding: 15px; font-size: 16px; background-color: transparent; border: none; color: #FFFFFF; }
-QPushButton:hover { background-color: #888888; }
-QLabel { color: #FFFFFF; }</string>
-     </property>
-     <layout class="QVBoxLayout" name="verticalLayout_sidebar">
-      <item>
-       <widget class="QLabel" name="label_logo">
-        <property name="minimumSize">
-         <size>
-          <width>0</width>
-          <height>100</height>
-         </size>
-        </property>
-        <property name="styleSheet">
-         <string>background-color: #FFFFFF; color: #000000; font-weight: bold; font-size: 18px;</string>
-        </property>
-        <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;NETSCAPES&lt;br/&gt;&lt;span style=&quot; font-size:10pt;&quot;&gt;NETWORK ANALYSIS&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="espaciador_sidebar_1">
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-        <property name="sizeType">
-         <enum>QSizePolicy::Policy::Fixed</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_nav_dashboard">
-        <property name="styleSheet">
-         <string>background-color: #dddddd; color: #000000; font-weight: bold;</string>
-        </property>
-        <property name="text">
-         <string>Dashboard</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_nav_captura">
-        <property name="text">
-         <string>Captura</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_nav_paquetes">
-        <property name="text">
-         <string>Paquetes</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_nav_reportes">
-        <property name="text">
-         <string>Reportes</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <widget class="QPushButton" name="btn_nav_bitacora">
-        <property name="text">
-         <string>Bitacora</string>
-        </property>
-       </widget>
-      </item>
-      <item>
-       <spacer name="espaciador_sidebar_2">
-        <property name="orientation">
-         <enum>Qt::Orientation::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>40</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item>
-       <layout class="QHBoxLayout" name="horizontalLayout_sesion">
-        <item>
-         <widget class="QLabel" name="label_avatar">
-          <property name="text">
-           <string>AD</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <widget class="QLabel" name="lbl_usuario_sesion">
-          <property name="font">
-           <font>
-            <family>Segoe UI</family>
-            <pointsize>12</pointsize>
-           </font>
-          </property>
-          <property name="text">
-           <string>Admin</string>
-          </property>
-         </widget>
-        </item>
-        <item>
-         <spacer name="espaciador_sesion">
-          <property name="orientation">
-           <enum>Qt::Orientation::Horizontal</enum>
-          </property>
-          <property name="sizeHint" stdset="0">
-           <size>
-            <width>40</width>
-            <height>20</height>
-           </size>
-          </property>
-         </spacer>
-        </item>
-        <item>
-         <widget class="QPushButton" name="btn_logout">
-          <property name="maximumSize">
-           <size>
-            <width>60</width>
-            <height>40</height>
-           </size>
-          </property>
-          <property name="text">
-           <string>Salir</string>
-          </property>
-         </widget>
-        </item>
-       </layout>
-      </item>
-     </layout>
-    </widget>
-   </item>
-   <item>
-    <layout class="QVBoxLayout" name="verticalLayout_contenido">
+  <layout class="QVBoxLayout" name="verticalLayout_contenido">
      <property name="leftMargin">
       <number>40</number>
      </property>
@@ -812,9 +638,7 @@ QLabel { color: #FFFFFF; }</string>
       </widget>
      </item>
     </layout>
-   </item>
-  </layout>
- </widget>
- <resources/>
- <connections/>
+   </widget>
+ <resources />
+ <connections />
 </ui>

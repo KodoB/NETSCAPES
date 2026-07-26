@@ -15,9 +15,9 @@ class LoginController(QWidget):
         user_data = self.modelo_usuario.verificar_credenciales(usuario, password)
 
         if user_data:
-            from controladores.dashboard_controller import DashboardController
-            self.dashboard = DashboardController(user_data)
-            self.dashboard.show()
+            from controladores.main_window_controller import MainWindowController
+            self.ventana_principal = MainWindowController(user_data)
+            self.ventana_principal.show()
             self.close()
         else:
             QMessageBox.warning(self, "Error", "Credenciales incorrectas")

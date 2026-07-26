@@ -1,15 +1,14 @@
 from PyQt6.QtWidgets import QTableWidgetItem
-from controladores.base_controller import BaseController
+from controladores.base_controller import PageController
 from modelos.trafico import Trafico
 
-class PaquetesController(BaseController):
+class PaquetesController(PageController):
     def __init__(self, user_data):
         super().__init__(user_data, "vistas/paquetes.ui")
-        self.btn_nav_paquetes.setEnabled(False)
         self.modelo_trafico = Trafico()
-        
+
         self.cargar_todos_paquetes()
-        
+
         self.tableWidget_paquetes.itemSelectionChanged.connect(self.mostrar_detalles)
 
     def cargar_todos_paquetes(self):
@@ -24,9 +23,9 @@ class PaquetesController(BaseController):
         fila_seleccionada = self.tableWidget_paquetes.currentRow()
         if fila_seleccionada >= 0:
             id_paquete = self.tableWidget_paquetes.item(fila_seleccionada, 0).text()
-            
+
             detalle = self.modelo_trafico.buscar_paquete_por_id(id_paquete)
-            
+
             if detalle:
                 self.lbl_detalles_id.setText(f"Información del paquete #{id_paquete}")
                 self.lbl_val_ip_origen.setText(str(detalle[2]))

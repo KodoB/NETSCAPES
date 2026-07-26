@@ -1,14 +1,14 @@
 from PyQt6.QtWidgets import QTableWidgetItem
 from PyQt6.QtCore import QTimer
-from controladores.base_controller import BaseController
+from controladores.base_controller import PageController
+from controladores.utilidades import formatear_tamano
 from modelos.trafico import Trafico
 
-class DashboardController(BaseController):
+class DashboardController(PageController):
     def __init__(self, user_data):
         super().__init__(user_data, "vistas/monitoreo.ui")
         self.modelo_trafico = Trafico()
-        self.btn_nav_dashboard.setEnabled(False) 
-        
+
         # Carga inicial
         self.cargar_ultimos_paquetes()
 
@@ -20,10 +20,10 @@ class DashboardController(BaseController):
     def cargar_ultimos_paquetes(self):
         """Extrae los paquetes y actualiza la tabla inferior visualmente"""
         datos = self.modelo_trafico.obtener_ultimos_paquetes(3)
-        
+
         # Guardar la selección actual si la hubiera
         self.tableWidget_ultimos.setRowCount(0)
-        
+
         for row_idx, row_data in enumerate(datos):
             self.tableWidget_ultimos.insertRow(row_idx)
             # row_data = (id, ip_origen, ip_destino, protocolo, tamano)
@@ -31,7 +31,31 @@ class DashboardController(BaseController):
                 item = QTableWidgetItem(str(col_data))
                 self.tableWidget_ultimos.setItem(row_idx, col_idx, item)
 
-    def closeEvent(self, event):
-        """Detiene el temporizador cuando se cambia de ventana"""
-        self.timer_refresh.stop()
-        super().closeEvent(event)
+    def actualizar_estadisticas_captura(self, stats):
+        """
+        Recibe el snapshot en vivo de CapturaController (conectado desde
+        MainWindowController) y actualiza las tarjetas superiores y las
+        barras de protocolos. Se llama tanto mientras se está capturando
+        como después de que la captura termina.
+        """
+        self.lbl_t1_valor.setText(str(stats['paquetes_totales']))
+        self.lbl_t1_sub.setText(f"+{stats['paquetes_por_minuto']} / min")
+
+        self.lbl_t2_valor.setText(formatear_tamano(stats['total_bytes']))
+
+        self.lbl_t3_valor.setText(str(stats['protocolos_distintos']))
+
+        self.lbl_t4_valor.setText(str(stats['ips_unicas']))
+        self.lbl_t4_sub.setText(f"{stats['ips_sospechosas']} sospechosas")
+
+        self.progressBar_http.setValue(stats['porcentaje_http'])
+        self.lbl_val_http.setText(f"{stats['porcentaje_http']}%")
+
+        self.progressBar_tcp.setValue(stats['porcentaje_tcp'])
+        self.lbl_val_tcp.setText(f"{stats['porcentaje_tcp']}%")
+
+        self.progressBar_udp.setValue(stats['porcentaje_udp'])
+        self.lbl_val_udp.setText(f"{stats['porcentaje_udp']}%")
+
+        self.progressBar_dns.setValue(stats['porcentaje_dns'])
+        self.lbl_val_dns.setText(f"{stats['porcentaje_dns']}%")

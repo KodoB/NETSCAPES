@@ -1,58 +1,29 @@
 from PyQt6.QtWidgets import QWidget
 from PyQt6.uic import loadUi
 
-class BaseController(QWidget):
+
+class PageController(QWidget):
+    """
+    Clase base para las PÁGINAS DE CONTENIDO que viven dentro del
+    QStackedWidget de MainWindowController.
+
+    IMPORTANTE: esta clase YA NO maneja navegación ni sidebar (eso ahora
+    vive una sola vez en MainWindowController). Su única responsabilidad
+    es cargar el .ui de contenido y guardar user_data.
+
+    Nota: se mantiene el nombre "PageController" en vez de "BaseController"
+    para dejar claro que representa una PÁGINA, no una ventana.
+    Si prefieres conservar el nombre BaseController, puedes hacer:
+        BaseController = PageController
+    al final de este archivo para no romper imports existentes.
+    """
+
     def __init__(self, user_data, ui_file):
         super().__init__()
         loadUi(ui_file, self)
         self.user_data = user_data
-        
-        if hasattr(self, 'lbl_usuario_sesion'):
-            self.lbl_usuario_sesion.setText(self.user_data[1]) 
-            
-        self.configurar_navegacion()
 
-    def configurar_navegacion(self):
-        """Conecta todos los botones del menú lateral a sus funciones"""
-        self.btn_nav_dashboard.clicked.connect(self.ir_dashboard)
-        self.btn_nav_captura.clicked.connect(self.ir_captura)
-        self.btn_nav_paquetes.clicked.connect(self.ir_paquetes)
-        self.btn_nav_reportes.clicked.connect(self.ir_reportes)
-        self.btn_nav_bitacora.clicked.connect(self.ir_bitacora)
-        self.btn_logout.clicked.connect(self.cerrar_sesion)
 
-    def ir_dashboard(self):
-        from controladores.dashboard_controller import DashboardController
-        self.ventana = DashboardController(self.user_data)
-        self.ventana.show()
-        self.close()
-
-    def ir_captura(self):
-        from controladores.captura_controller import CapturaController
-        self.ventana = CapturaController(self.user_data)
-        self.ventana.show()
-        self.close()
-
-    def ir_paquetes(self):
-        from controladores.paquetes_controller import PaquetesController
-        self.ventana = PaquetesController(self.user_data)
-        self.ventana.show()
-        self.close()
-
-    def ir_reportes(self):
-        from controladores.reportes_controller import ReportesController
-        self.ventana = ReportesController(self.user_data)
-        self.ventana.show()
-        self.close()
-
-    def ir_bitacora(self):
-        from controladores.bitacora_controller import BitacoraController
-        self.ventana = BitacoraController(self.user_data)
-        self.ventana.show()
-        self.close()
-
-    def cerrar_sesion(self):
-        from controladores.login_controller import LoginController
-        self.ventana = LoginController()
-        self.ventana.show()
-        self.close()
+# Alias por compatibilidad, así no tienes que tocar los imports que ya
+# tengas escritos como "from controladores.base_controller import BaseController"
+BaseController = PageController

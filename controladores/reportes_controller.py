@@ -5,7 +5,7 @@ import csv
 from datetime import datetime
 from PyQt6.QtWidgets import QTableWidgetItem, QMessageBox, QPushButton
 from PyQt6.QtCore import Qt, QDate
-from controladores.base_controller import BaseController
+from controladores.base_controller import PageController
 from modelos.trafico import Trafico
 
 # Librerías para el PDF
@@ -14,12 +14,11 @@ from reportlab.platypus import SimpleDocTemplate, Table, TableStyle, Paragraph, 
 from reportlab.lib.styles import getSampleStyleSheet
 from reportlab.lib import colors
 
-class ReportesController(BaseController):
+class ReportesController(PageController):
     def __init__(self, user_data):
         super().__init__(user_data, "vistas/reportes.ui")
-        self.btn_nav_reportes.setEnabled(False)
         self.modelo_trafico = Trafico()
-        
+
         # 1. Configurar fechas predeterminadas al día actual
         fecha_actual = QDate.currentDate()
         self.dateEdit_inicio.setDate(fecha_actual)
@@ -29,7 +28,7 @@ class ReportesController(BaseController):
         self.radio_pdf.toggled.connect(self.actualizar_estado_secciones)
         self.radio_csv.toggled.connect(self.actualizar_estado_secciones)
         self.radio_json.toggled.connect(self.actualizar_estado_secciones)
-        
+
         # Ejecutar una vez al inicio para establecer el estado base (PDF activado)
         self.actualizar_estado_secciones()
 
@@ -48,11 +47,11 @@ class ReportesController(BaseController):
         """Bloquea o desbloquea las secciones dependiendo del formato elegido"""
         # Solo PDF soporta las secciones visuales
         es_pdf = self.radio_pdf.isChecked()
-        
+
         self.chk_resumen.setEnabled(es_pdf)
         self.chk_distribucion.setEnabled(es_pdf)
         self.chk_ips.setEnabled(es_pdf)
-        
+
         # Si se deshabilita, quitar las palomitas para que no haya confusiones visuales
         if not es_pdf:
             self.chk_resumen.setChecked(False)
@@ -62,14 +61,14 @@ class ReportesController(BaseController):
     def cargar_historial_reportes(self):
         """Lee la carpeta exportados y llena la tabla del historial"""
         self.tableWidget_historial.setRowCount(0)
-        
+
         if not os.path.exists(self.carpeta_exportados):
             return
 
         archivos = os.listdir(self.carpeta_exportados)
         archivos_validos = [f for f in archivos if f.endswith(('.pdf', '.csv', '.json'))]
-        archivos_ordenados = sorted(archivos_validos, 
-                                    key=lambda x: os.path.getmtime(os.path.join(self.carpeta_exportados, x)), 
+        archivos_ordenados = sorted(archivos_validos,
+                                    key=lambda x: os.path.getmtime(os.path.join(self.carpeta_exportados, x)),
                                     reverse=True)
 
         for row_idx, nombre_archivo in enumerate(archivos_ordenados):
@@ -85,7 +84,7 @@ class ReportesController(BaseController):
             btn_descargar = QPushButton("📥")
             btn_descargar.setStyleSheet("background-color: transparent; font-size: 16px;")
             btn_descargar.setCursor(Qt.CursorShape.PointingHandCursor)
-            
+
             btn_descargar.clicked.connect(lambda checked, ruta=ruta_completa: self.descargar_copia(ruta))
             self.tableWidget_historial.setCellWidget(row_idx, 3, btn_descargar)
 
@@ -93,7 +92,7 @@ class ReportesController(BaseController):
         """Toma el archivo de 'exportados' y lo copia a la carpeta de 'Downloads'"""
         nombre_archivo = os.path.basename(ruta_origen)
         ruta_destino = os.path.join(self.carpeta_descargas, nombre_archivo)
-        
+
         try:
             shutil.copy2(ruta_origen, ruta_destino)
             QMessageBox.information(self, "Descarga Exitosa", f"Archivo guardado en:\n{ruta_destino}")
@@ -104,7 +103,7 @@ class ReportesController(BaseController):
         nombre = self.lineEdit_nombre_reporte.text().strip()
         fecha_inicio = self.dateEdit_inicio.date().toString("yyyy-MM-dd")
         fecha_fin = self.dateEdit_fin.date().toString("yyyy-MM-dd")
-        
+
         if not nombre:
             QMessageBox.warning(self, "Campo Obligatorio", "El nombre del reporte es obligatorio.")
             return
@@ -116,10 +115,10 @@ class ReportesController(BaseController):
 
         formato = "PDF"
         extension = ".pdf"
-        if self.radio_csv.isChecked(): 
+        if self.radio_csv.isChecked():
             formato = "CSV"
             extension = ".csv"
-        elif self.radio_json.isChecked(): 
+        elif self.radio_json.isChecked():
             formato = "JSON"
             extension = ".json"
 
@@ -142,7 +141,7 @@ class ReportesController(BaseController):
             shutil.copy2(ruta_guardado, ruta_descarga)
 
             QMessageBox.information(self, "Éxito", f"Reporte generado y guardado en tu carpeta de Descargas:\n{ruta_descarga}")
-            
+
             self.cargar_historial_reportes()
             self.lineEdit_nombre_reporte.clear()
 
@@ -156,7 +155,7 @@ class ReportesController(BaseController):
             writer = csv.writer(file)
             writer.writerow(["ID", "Fecha", "IP Origen", "IP Destino", "Puerto Origen", "Puerto Destino", "Protocolo", "Tamaño"])
             for row in datos:
-                writer.writerow([row['id'], row['fecha'], row['ip_origen'], row['ip_destino'], 
+                writer.writerow([row['id'], row['fecha'], row['ip_origen'], row['ip_destino'],
                                  row['puerto_origen'], row['puerto_destino'], row['protocolo'], row['tamano']])
 
     def _generar_json(self, datos, ruta, incluir_resumen):
@@ -165,7 +164,7 @@ class ReportesController(BaseController):
                 d['fecha'] = d['fecha'].strftime('%Y-%m-%d %H:%M:%S')
 
         estructura = {"trafico_crudo": datos}
-        
+
         if incluir_resumen:
             estructura["metadata"] = {
                 "total_paquetes": len(datos),
